@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <style>
+        .container{
+           
+        }
+        #result{
+            width: 200px;
+            height: 50px;
+            margin: 40px;
+        }
+        #height ,#weight{
+            width: 150px;
+            height: 50px;
+            margin: 0px 50px 20px 50px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <!-- <label for="result">BMI value: </label> -->
+        <input type="text" name="BMI" id="result" placeholder="BMI Value " readonly>
+        <br>
+        
+        <!-- <label for="height">Enter height in 'm' : </label> -->
+        <input type="text" id="height" placeholder="Enter Height in m">
+        <br>
+        <!-- <label for="weight">Enter weight in 'kg' : </label> -->
+        <input type="text" id="weight" placeholder="Enter weight in kg">
+
+        <br>
+        <label for="calc">calculate</label>
+        <input type="button" id="calc">
+        </form>
+    </div>
+</body>
+<script>
+    const form = document.querySelector('form');
+    
+
+    form.addEventListener('submit' , function(e){
+
+    e.preventDefault();
+
+    const height = parseInt(document.getElementById('#height').value);
+    const weight = parseInt(document.getElementById('#weight').value);
+    const result = document.getElementById('#result');
+
+    if(height === '' || height < 0){
+        result.innerHTML = `Please enter valid height ${height}`;
+    }
+    else if(weight === '' || weight < 0){
+        result.innerHTML = `Please enter valid height ${weight}`;
+    }
+    else{
+        const bmi = weight/(height*height).toFixed(2);
+
+        result.innerHTML = `${bmi}`;
+    }
+}
+    )
+
+</script>
+</html>
