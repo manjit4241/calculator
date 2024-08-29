@@ -1,0 +1,75 @@
+*{
+    font-family: "Outfit", sans-serif;
+    
+}
+body{
+    background-color: #414141;
+    /* font-family: "Outfit", sans-serif; */
+}
+.container{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+form{
+    border: 1px solid rgb(80, 80, 75);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+h2{
+    /* font-family: "Bungee Tint", sans-serif; */
+    text-align: center;
+}
+#add{
+    border: 1px solid #414141;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 2000px;
+    background-color: #414141;
+    font-size: 30px;
+    color: aliceblue;
+    box-shadow: 2px 2px 10px black;
+    
+}
+#add:hover {
+    background-color: rgb(69, 55, 55);
+}
+#iteminput{
+    width: 450px;
+    height: 70px;
+    background-color:rgb(69, 55, 55);
+    border: 0px;
+    border-radius: 20px;
+    font-size: 22px;
+    box-shadow: 2px 2px 10px black;
+    padding: 5px;
+    padding-left: 25px;
+    font-family: "Outfit", sans-serif;
+    
+}
+#iteminput:hover{
+    background-color: #2c1111;
+    color: aliceblue;
+}
+li{
+    list-style-type: square;
+    font-weight: 550;
+    width: 450px;
+    height: 30px;
+    background-color: rgb(197, 255, 39);
+    border: 0px;
+    border-radius: 20px;
+    font-size: 22px;
+    box-shadow: 2px 2px 10px black;
+    padding: 5px;
+    padding-left: 25px;
+    color: rgb(46, 42, 42);
+    margin-top: 15px;
+    font-family: "Outfit", sans-serif;
+    
+}
+
