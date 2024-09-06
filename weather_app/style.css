@@ -1,0 +1,155 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #414141;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(assets/mistWall.jpg);
+    background-position: center;
+    background-size: cover; */
+}
+
+body::before{
+    background-image: url('assets/mistWall.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(10px); /* Adjust the blur intensity as needed */
+            z-index: -1; 
+}
+.container{
+    text-align: center;
+    border: 0px;
+}
+h2 {
+    margin: 50px 50px 10px 50px ;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-shadow: 1px 1px 15px black;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-shadow: 1px 1px 15px black;
+}
+h6{
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px black;
+}
+.card{
+    height: 84%;
+    width: 95%;
+    padding: 50px;
+    border: 0px;   
+    box-shadow: 1px 0px 50px black;
+    border-radius: 20px;
+    background-image: url(assets/bgCard.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#city{
+    font-size: 20px;
+    padding: 13px 30px 13px 30px;
+    border: 0px;
+    border-radius: 10px;
+    width: 280px;
+    height: 40px;
+    /* background-color: #414141; */
+    background: transparent;
+    box-shadow: 1px 1px 10px black;
+    color: rgb(8, 8, 8);
+}
+#city::placeholder{
+    /* background-color: rgba(115, 152, 233, 0.173); */
+    padding: 10px;
+    border-radius: 5px;
+    color: rgba(13, 13, 13, 0.319);
+}
+#city:hover{
+    box-shadow: 1px 2px 30px;
+}
+#search{
+
+    font-size: 20px;
+    margin: 0px;
+    border-radius: 100px;
+    padding: 20px;
+    background-color: rgba(245, 245, 220, 0.279);
+    cursor: pointer;
+    background-color: rgba(105, 89, 89, 0.719);
+    box-shadow: 2px 2px 10px;
+}
+#search:hover{
+    background-color: #726262;
+}
+#temp_logo{
+    margin-right: 20px ;
+    
+}
+
+.wind{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    color: rgb(3, 3, 3);  
+    font-weight: bold;  
+}
+
+.varTemp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    color: rgb(12, 12, 12);  
+    font-weight: bold; 
+}
+
+#wind , #humidity{
+    border: 0px;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 170px;
+    background-color: rgba(0, 68, 255, 0.436);
+}
+#maxT , #minT{
+    margin-bottom: 20px;
+    width: 170px;
+    border: 0px;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    border-radius: 10px;
+}
+#minT{
+    background-color: lightblue;
+    color: black;
+}
+#maxT{
+    background-color: rgba(255, 0, 0, 0.329);
+}
+
+.status_img{
+    margin: 50px 0px 10px 0px;
+}
+
+#weather_img{
+    height: 100px;
+    width: 100px;
+    
+}
