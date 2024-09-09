@@ -49,4 +49,3 @@ search_btn.addEventListener('click', async () => {
     console.log(userData);
 });
 
-hiteshchoudhary
