@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Chivo", sans-serif;
+}
+
+body , html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #434151;
+}
+
+.full_container{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#logoIcon{
+    font-size: 28px;
+    color: wheat;
+}
+
+.logoSec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#textLogo{
+    font-size: 24px;
+    color: wheat;
+    margin: 10px 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 0px;
+    border-radius: 15px;
+    padding: 30px;
+    display: none;
+    /* flex-wrap: nowrap; */
+}
+
+#search , #input{
+    padding: 10px 20px;    
+    background-color: rgba(20, 19, 19, 0.345);
+    border: 0px;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#input::placeholder{
+    color: #fff;
+    background-color: #6e646446;
+    padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#search:hover{
+    background-color: #6359595c;
+    cursor: pointer;
+}
+
+.avtar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+#pp{
+    padding: 2px;
+    align-items: center;
+    display: none;
+    border: 10px;
+    width: 140px;
+    height: 140px;
+    aspect-ratio: 1;
+    background-color: #aeff00;
+    border-radius: 50%;
+    margin: 20px;
+}
+#name{
+    margin: 20px;
+}
+#bio
+{
+    font-size: 13px;
+    color: rgb(170, 219, 243);
+    opacity: 0.6;
+}
+#followersNo,#followingNo,#repo{
+    border: 0px;
+    /* background-color: rgba(87, 244, 9, 0.366); */
+    padding: 20px;
+    /* margin: 40px; */
+    border-radius: 10px;
+    
+}
+#followers{
+    margin: 20px 0px;
+}
+
+.repos{
+    margin: 20px;
+}
+.follow_detail{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background-color:rgba(9, 142, 244, 0.366);
+    box-shadow: 0px 0px 10px cadetblue;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#github_pp{
+    color: aliceblue;
+    text-decoration: none;
+}
+#github_pp:hover{
+    color: rgb(0, 191, 255);
+    text-decoration: underline;
+    
+}
+
+.underline-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(179, 255, 0);
+    font-size: 20px;
+}
+
+.underline-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(229, 255, 0);
+    transition: width 0.7s ease;
+}
+
+.underline-link:hover::before {
+    width: 100%;
+}
+
+.logoSec {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(179, 255, 0);
+    font-size: 20px;
+}
+
+.logoSec::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(229, 255, 0);
+    transition: width 0.7s ease;
+}
+
+.logoSec:hover::before {
+    width: 100%;
+}
+
+
+.repoCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    border: 1px solid rgb(255, 98, 0);
+    border-radius: 25px;
+}
+
+
+.created{
+    color: white;
+    opacity: 0.4;
+    font-size: 13px;
+    /* margin-top: 10px; */
+    display: flex;
+    justify-content: end;
+}
