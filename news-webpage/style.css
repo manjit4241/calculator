@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+body{
+    background-color: #f5e96a;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBox{
+    margin: 20px;
+
+}
+#input {
+    width: 300px;
+    height: 46px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 6px rgba(53, 61, 66, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#input:hover{
+    background-color: #a8ba4e4e;
+}
+
+#searchBtn{
+    background-color: rgba(128, 128, 128, 0.708);
+    border: none;
+    box-shadow: 0px 0px 6px rgba(53, 61, 66, 0.6);
+    border-radius: 15px;
+    padding: 13px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#searchBtn:hover{
+    background-color: rgba(53, 61, 66, 0.471);
+}
+
+.news_img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.newsSec{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+            flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+            justify-content: space-between;
+}
+.card{
+    background-color: cadetblue;
+    border: none;
+    box-shadow: 0px 0px 8px;
+    border-radius: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    transition: transform 0.2s ease, opacity 0.1s ease;
+}
+.card:hover{
+    scale: 1.05;
+    opacity: 0.92 ;
+}
+
+.uiPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+.desp{
+    margin-top: 20px;
+
+}
+a{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
