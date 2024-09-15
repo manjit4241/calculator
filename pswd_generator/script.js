@@ -36,6 +36,7 @@ resetBtn.addEventListener('click' , ()=>{
     pswd.value = "";
     document.querySelector('#length').value = ""
     document.querySelector('#copy').innerHTML = '<i class="fa-regular fa-copy"></i>'
+    document.querySelector('#copyMsg').style.display = 'none'; 
 })
 
 document.querySelector('#copy').addEventListener('click',()=>{
@@ -48,4 +49,5 @@ document.querySelector('#copy').addEventListener('click',()=>{
         });
 
         document.querySelector('#copy').innerHTML = '<i class="fa-solid fa-check" id ="done"></i>'
+        document.querySelector('#copyMsg').style.display = 'inline'
 })

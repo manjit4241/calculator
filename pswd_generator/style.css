@@ -64,6 +64,7 @@ h1{
     padding: 20px;
     border: none;
     border-radius: 20px;
+    box-shadow: 1px 1px 6px;
 }
 
 #generate  {
@@ -112,5 +113,10 @@ h1{
 
 input[type="checkbox"] {
     transform: scale(1.7); 
+}
+#copyMsg{
+    display: none;
+    transition: transform ease-in 2s;
+    font-size: 10px;
 }
 
